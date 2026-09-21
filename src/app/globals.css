@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --maroon-deep: #5C1A2B;
+  --wine: #7A2436;
+  --ivory: #FBF6EE;
+  --cream: #F3E9D8;
+  --gold-muted: #B08D57;
+  --gold-soft: #D9C08C;
+  --blush: #F0DCD0;
+  --peach: #E8B9A0;
+  --brown-dark: #2E1A12;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-maroon-deep: var(--maroon-deep);
+  --color-wine: var(--wine);
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+  --color-gold-muted: var(--gold-muted);
+  --color-gold-soft: var(--gold-soft);
+  --color-blush: var(--blush);
+  --color-peach: var(--peach);
+  --color-brown-dark: var(--brown-dark);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-lora);
+  --font-script: var(--font-petit);
+  --font-hindi: var(--font-tiro);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--ivory);
+  color: var(--brown-dark);
+  font-family: var(--font-body), sans-serif;
+  overflow-x: hidden;
 }
