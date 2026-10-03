@@ -1,37 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --maroon-deep: #5C1A2B;
-  --wine: #7A2436;
-  --ivory: #FBF6EE;
-  --cream: #F3E9D8;
-  --gold-muted: #B08D57;
-  --gold-soft: #D9C08C;
-  --blush: #F0DCD0;
-  --peach: #E8B9A0;
-  --brown-dark: #2E1A12;
+  /* Sage Green & Cream Theme Colors */
+  --sage: #8A9A78;
+  --forest: #4A5D3F;
+  --cream: #EFE6D2;
+  --linen-dark: #D9CBAE;
+  --gold: #B8913A;
+  --blush: #D9A5A0;
+  --ivory: #F6EFE0;
+  --text-dark: #2F3A27;
+  --text-muted: #6B7560;
 }
 
 @theme inline {
-  --color-maroon-deep: var(--maroon-deep);
-  --color-wine: var(--wine);
-  --color-ivory: var(--ivory);
+  --color-sage: var(--sage);
+  --color-forest: var(--forest);
   --color-cream: var(--cream);
-  --color-gold-muted: var(--gold-muted);
-  --color-gold-soft: var(--gold-soft);
+  --color-linen-dark: var(--linen-dark);
+  --color-gold: var(--gold);
   --color-blush: var(--blush);
-  --color-peach: var(--peach);
-  --color-brown-dark: var(--brown-dark);
+  --color-ivory: var(--ivory);
+  --color-text-dark: var(--text-dark);
+  --color-text-muted: var(--text-muted);
 
-  --font-display: var(--font-cormorant);
+  --font-script: var(--font-dancing);
+  --font-display: var(--font-playfair);
   --font-body: var(--font-lora);
-  --font-script: var(--font-petit);
-  --font-hindi: var(--font-tiro);
+  --font-italic: var(--font-cormorant);
 }
 
 body {
-  background-color: var(--ivory);
-  color: var(--brown-dark);
+  background-color: var(--cream);
+  color: var(--text-dark);
   font-family: var(--font-body), sans-serif;
   overflow-x: hidden;
+  /* Cream linen texture */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Wavy Divider Utility */
+.wavy-divider {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='20' viewBox='0 0 40 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q10 0 20 10 T40 10' fill='none' stroke='%238A9A78' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='1.5' fill='%238A9A78'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center;
 }

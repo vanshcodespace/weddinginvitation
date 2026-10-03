@@ -1,5 +1,5 @@
-import EnvelopeScreen from "@/components/opening/EnvelopeScreen";
-import GaneshInvocation from "@/components/sections/GaneshInvocation";
+import DoorScreen from "@/components/opening/DoorScreen";
+import HeroCurtain from "@/components/sections/HeroCurtain";
 import CoupleIntro from "@/components/sections/CoupleIntro";
 import SaveTheDate from "@/components/sections/SaveTheDate";
 import Countdown from "@/components/sections/Countdown";
@@ -19,12 +19,12 @@ export default function Home() {
   return (
     <AppProvider>
       <main className="relative">
-        <EnvelopeScreen />
+        <DoorScreen />
         <MusicControl />
         <FloatingNav />
         
         <div className="relative">
-          <GaneshInvocation />
+          <HeroCurtain />
           <CoupleIntro />
           <SaveTheDate />
           <Countdown />

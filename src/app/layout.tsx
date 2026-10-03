@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Lora, Petit_Formal_Script, Tiro_Devanagari_Hindi } from "next/font/google";
+import { Cormorant_Garamond, Lora, Dancing_Script, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -16,17 +16,17 @@ const lora = Lora({
   display: "swap",
 });
 
-const petit = Petit_Formal_Script({
+const dancing = Dancing_Script({
   subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-petit",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-dancing",
   display: "swap",
 });
 
-const tiro = Tiro_Devanagari_Hindi({
-  subsets: ["devanagari"],
-  weight: ["400"],
-  variable: "--font-tiro",
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-playfair",
   display: "swap",
 });
 
@@ -41,8 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${lora.variable} ${petit.variable} ${tiro.variable}`}>
-      <body className="antialiased min-h-screen flex flex-col bg-ivory text-brown-dark">
+    <html lang="en" className={`${cormorant.variable} ${lora.variable} ${dancing.variable} ${playfair.variable}`}>
+      <body className="antialiased min-h-screen flex flex-col">
         {children}
       </body>
     </html>
