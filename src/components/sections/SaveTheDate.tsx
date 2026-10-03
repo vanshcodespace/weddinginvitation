@@ -194,7 +194,7 @@ END:VCALENDAR`;
         >
           <div className="font-display text-sm uppercase text-sage tracking-wider">Wednesday</div>
           <div className="font-display text-xl font-bold text-dark-olive my-1">Nov 25, 2026</div>
-          <div className="font-display text-sm text-sage">7:00 PM</div>
+          
         </div>
 
         {/* Scratch Canvas without CSS clip-path to fix rendering bugs */}

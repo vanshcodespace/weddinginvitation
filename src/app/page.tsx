@@ -23,8 +23,8 @@ export default function Home() {
         <div className="w-full max-w-[480px] relative bg-ivory/80 shadow-2xl min-h-screen pb-20">
           <DoorScreen />
           <MusicControl />
-          <FloatingNav />
-          
+          {/* <FloatingNav />
+           */}
           <div className="relative">
             <HeroCurtain />
             <div className="wavy-divider" />
@@ -37,10 +37,10 @@ export default function Home() {
             <EventsTimeline />
             <div className="wavy-divider" />
             <Venue />
-            <div className="wavy-divider" />
-            <PreWeddingEvents />
-            <div className="wavy-divider" />
-            <RSVPForm />
+            {/* <div className="wavy-divider" />
+            <PreWeddingEvents /> */}
+            {/* <div className="wavy-divider" />
+            <RSVPForm /> */}
             <FinalSection />
           </div>
         </div>

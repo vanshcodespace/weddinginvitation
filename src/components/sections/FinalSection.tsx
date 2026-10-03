@@ -15,6 +15,12 @@ export default function FinalSection() {
       </div>
       
       <div className="heart-divider mb-0"><span className="text-white">❦</span></div>
+
+      <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 text-left flex flex-col gap-1 opacity-90 z-10">
+        <span className="uppercase tracking-widest font-semibold text-xs md:text-sm text-cream/80">RSVP</span>
+        <span className="font-serif text-sm md:text-base text-cream drop-shadow-sm">M/s Mohindra metal industries</span>
+        <span className="font-serif text-sm md:text-base text-cream drop-shadow-sm">M/s Akshit enterprises</span>
+      </div>
     </footer>
   );
 }

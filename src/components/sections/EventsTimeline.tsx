@@ -6,7 +6,8 @@ export default function EventsTimeline() {
   const timeline = weddingConfig.events.map(event => ({
     time: event.date.substring(0, 6), // "Nov 23"
     title: event.name,
-    subtitle: event.time
+    subtitle: event.time,
+    venue: event.venue
   }));
 
   return (
@@ -40,6 +41,11 @@ export default function EventsTimeline() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="text-center mt-8 pt-6 border-t border-sage/30 max-w-[280px] mx-auto">
+        <h3 className="font-display font-semibold text-sm tracking-widest text-dark-olive mb-2 uppercase">Venue</h3>
+        <p className="font-italic text-dark-olive/90 text-lg drop-shadow-sm">📍 Shibu Makhan Dharmshala</p>
       </div>
     </SectionWrapper>
   );

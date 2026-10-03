@@ -11,7 +11,7 @@ export const weddingConfig = {
   timezone: "Asia/Kolkata",
   venue: {
     name: "Anandam Resort",
-    address: "Anandam Resort",
+    address: "Jagadhri, Haryana",
     mapsUrl: "https://www.google.com/maps/place/ANANDAM+RESORT/data=!4m2!3m1!1s0x0:0x731cd4cb29a1b533?sa=X&ved=1t:2428&ictx=111",
   },
   events: [
@@ -19,35 +19,25 @@ export const weddingConfig = {
       id: "haldi-mehndi",
       name: "Haldi & Mehndi",
       date: "Nov 23, 2026",
-      time: "10:00 AM",
-      venue: "Shibu Makhan Dharamshala",
-      address: "Shibu Makhan Dharamshala",
+      time: "3:00 PM",
+      venue: "Shibu Makhan Dharmshala",
+      address: "Shibu Makhan Dharmshala",
       description: "Join us for a morning of colors, henna, and music as we kick off the celebrations.",
       dressCode: "Yellow / Green Traditional",
-      mapsUrl: "https://maps.google.com/?q=Shibu+Makhan+Dharamshala",
+      mapsUrl: "https://maps.google.com/?q=Shibu+Makhan+Dharmshala",
     },
     {
       id: "sangeet",
-      name: "Sangeet Night",
+      name: "Sangeet Ceremony",
       date: "Nov 24, 2026",
-      time: "7:00 PM",
-      venue: "Shibu Makhan Dharamshala",
-      address: "Shibu Makhan Dharamshala",
+      time: "8:00 PM",
+      venue: "Shibu Makhan Dharmshala",
+      address: "Shibu Makhan Dharmshala",
       description: "An evening of dance, performances, and celebration. Bring your dancing shoes!",
       dressCode: "Indo-Western / Glamorous",
-      mapsUrl: "https://maps.google.com/?q=Shibu+Makhan+Dharamshala",
+      mapsUrl: "https://maps.google.com/?q=Shibu+Makhan+Dharmshala",
     },
-    {
-      id: "wedding",
-      name: "Wedding Ceremony",
-      date: "Nov 25, 2026",
-      time: "7:00 PM",
-      venue: "Anandam Resort",
-      address: "Anandam Resort",
-      description: "The main event where we tie the knot. Dinner and reception to follow.",
-      dressCode: "Traditional Indian",
-      mapsUrl: "https://www.google.com/maps/place/ANANDAM+RESORT/data=!4m2!3m1!1s0x0:0x731cd4cb29a1b533?sa=X&ved=1t:2428&ictx=111",
-    }
+  
   ],
   ourStory: {
     enabled: true,
@@ -61,7 +51,7 @@ export const weddingConfig = {
   family: {
     enabled: true,
     groomFamily: { heading: "Groom's Family", members: ["Mr. & Mrs. Mittal", "Pankaj Mittal", " Mittal"] },
-    brideFamily: { heading: "Bride's Family", members: ["Mr. & Mrs. Mittal", "Mr", "Mrs"] },
+    brideFamily: { heading: "Bride's Family", members: ["Mr. & Mrs. Mittal", "Romit Mittal", "Sonali Mittal"] },
   },
   gallery: {
     images: [
