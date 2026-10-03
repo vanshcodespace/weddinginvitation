@@ -1,50 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  /* Sage Green & Cream Theme Colors */
-  --sage: #8A9A78;
-  --forest: #4A5D3F;
-  --cream: #EFE6D2;
-  --linen-dark: #D9CBAE;
-  --gold: #B8913A;
-  --blush: #D9A5A0;
-  --ivory: #F6EFE0;
-  --text-dark: #2F3A27;
-  --text-muted: #6B7560;
+  /* Theme Colors */
+  --sage: #6E7F5C;
+  --dark-olive: #3F4F35;
+  --cream-beige: #D9C9A6;
+  --gold: #B8903A;
+  --blush-rose: #F2D5D9;
+  --ivory: #F8F4E6;
 }
 
 @theme inline {
   --color-sage: var(--sage);
-  --color-forest: var(--forest);
-  --color-cream: var(--cream);
-  --color-linen-dark: var(--linen-dark);
+  --color-dark-olive: var(--dark-olive);
+  --color-cream: var(--cream-beige);
   --color-gold: var(--gold);
-  --color-blush: var(--blush);
+  --color-blush: var(--blush-rose);
   --color-ivory: var(--ivory);
-  --color-text-dark: var(--text-dark);
-  --color-text-muted: var(--text-muted);
 
   --font-script: var(--font-dancing);
+  --font-names: var(--font-greatvibes);
   --font-display: var(--font-playfair);
   --font-body: var(--font-lora);
   --font-italic: var(--font-cormorant);
 }
 
 body {
-  background-color: var(--cream);
-  color: var(--text-dark);
+  background-color: #f9f6f0;
+  color: var(--dark-olive);
   font-family: var(--font-body), sans-serif;
   overflow-x: hidden;
-  /* Cream linen texture */
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+  /* Cream linen luxury texture */
+  background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+  scroll-behavior: smooth;
+  line-height: 1.8;
 }
 
 /* Wavy Divider Utility */
 .wavy-divider {
-  position: relative;
   width: 100%;
   height: 20px;
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='20' viewBox='0 0 40 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q10 0 20 10 T40 10' fill='none' stroke='%238A9A78' stroke-width='1'/%3E%3Ccircle cx='20' cy='10' r='1.5' fill='%238A9A78'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q25 0 50 10 T100 10' fill='none' stroke='%23d4af37' stroke-width='1' opacity='0.5'/%3E%3C/svg%3E");
   background-repeat: repeat-x;
-  background-position: center;
+  margin: 30px 0;
 }
+
+.heart-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 35px;
+}
+.heart-divider::before, .heart-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(to right, transparent, #d4af37);
+  opacity: 0.7;
+}
+.heart-divider::after {
+  background: linear-gradient(to left, transparent, #d4af37);
+}
+.heart-divider span {
+  margin: 0 15px;
+  color: #d4af37;
+  font-size: 1.2rem;
+  font-family: serif;
+}
+
+/* Fixed side borders */
+.floral-border {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 10;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 100"><circle cx="15" cy="50" r="5" fill="%236E7F5C" opacity="0.3"/></svg>'); /* Replace with your repeating floral SVG/PNG */
+  background-repeat: repeat-y;
+  pointer-events: none;
+}
+.floral-border-left { left: 0; background-position: left; }
+.floral-border-right { right: 0; background-position: right; transform: scaleX(-1); }

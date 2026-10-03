@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Lora, Dancing_Script, Playfair_Display } from "next/font/google";
+import { Cormorant_Garamond, Lora, Dancing_Script, Playfair_Display, Great_Vibes } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -30,9 +30,16 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-greatvibes",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Akshit & Aarushi - Wedding Invitation",
-  description: "Together with our families, we invite you to celebrate our wedding.",
+  description: "We can't wait to celebrate with you!",
 };
 
 export default function RootLayout({
@@ -41,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${lora.variable} ${dancing.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${lora.variable} ${dancing.variable} ${playfair.variable} ${greatVibes.variable}`}>
       <body className="antialiased min-h-screen flex flex-col">
         {children}
       </body>
