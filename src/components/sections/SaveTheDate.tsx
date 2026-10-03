@@ -43,10 +43,12 @@ export default function SaveTheDate() {
 
     // Add "Scratch ❤️" text on top
     ctx.fillStyle = "#ffffff";
-    ctx.font = "bold 20px 'Playfair Display', serif";
-    ctx.textAlign = "center";
+    ctx.font = "bold 22px 'Playfair Display', serif";
     ctx.textBaseline = "middle";
-    ctx.fillText("Scratch ❤️", canvas.width / 2, canvas.height / 2);
+    const text = "Scratch ❤️";
+    const textWidth = ctx.measureText(text).width;
+    // Manually center text to avoid iOS Safari textAlign quirks
+    ctx.fillText(text, (canvas.width - textWidth) / 2, 105);
 
     ctx.globalCompositeOperation = "destination-out";
     ctx.lineJoin = "round";
