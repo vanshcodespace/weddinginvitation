@@ -19,7 +19,7 @@ export default function Home() {
         <div className="floral-border floral-border-right hidden sm:block" />
         
         {/* Mobile-first centered column */}
-        <div className="w-full max-w-[480px] relative bg-ivory/80 shadow-2xl min-h-screen pb-20">
+        <div className="w-full max-w-[480px] relative bg-ivory/80 shadow-2xl min-h-screen">
           <DoorScreen />
           <MusicControl />
           {/* <FloatingNav />
