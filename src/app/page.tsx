@@ -8,7 +8,6 @@ import Venue from "@/components/sections/Venue";
 import PreWeddingEvents from "@/components/sections/PreWeddingEvents";
 import RSVPForm from "@/components/sections/RSVPForm";
 import FinalSection from "@/components/sections/FinalSection";
-import FloatingNav from "@/components/nav/FloatingNav";
 import MusicControl from "@/components/music/MusicControl";
 import { AppProvider } from "@/components/ui/AppContext";
 

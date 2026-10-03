@@ -3,7 +3,7 @@ import SectionWrapper from "@/components/ui/SectionWrapper";
 import { weddingConfig } from "@/config/wedding";
 
 export default function PreWeddingEvents() {
-  const events = weddingConfig.events.filter(e => e.id !== 'wedding');
+  const events = weddingConfig.events.filter(e => (e.id as string) !== 'wedding');
 
   return (
     <SectionWrapper id="prewedding" className="py-16 px-6 text-center">
