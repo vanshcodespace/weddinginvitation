@@ -5,7 +5,7 @@ export const weddingConfig = {
     groomFullName: "Akshit Mittal",
     brideFullName: "Aarushi Mittal",
     groomParents: "Vandana & Pankaj Mittal",
-    brideParents: "Saloni & Romit Mittal",
+    brideParents: "Sonali & Romit Mittal",
   },
   weddingDateTime: "2026-11-25T19:00:00+05:30", 
   timezone: "Asia/Kolkata",
