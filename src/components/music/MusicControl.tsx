@@ -9,7 +9,7 @@ export default function MusicControl() {
 
   useEffect(() => {
     // Create audio on mount to avoid SSR issues
-    audioRef.current = new Audio("/music/leberch-invitation-wedding-375839.mp3");
+    audioRef.current = new Audio("/music/music.mp3");
     audioRef.current.loop = true;
     audioRef.current.volume = 0.5;
 
