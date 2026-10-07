@@ -42,6 +42,12 @@ export default function HeroCurtain() {
               <p className="font-display text-[0.9rem] text-[#3F4F35] font-medium tracking-wide mt-0.5 text-center">{weddingConfig.couple.brideParents}</p>
             </div>
           </div>
+          
+          <div className="mt-8 text-center">
+            <p className="font-display tracking-[0.3em] text-[#d4af37] font-semibold text-lg bg-white/60 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm border border-[#d4af37]/30">
+              #DestinedtobeAA
+            </p>
+          </div>
         </div>
       </div>
 

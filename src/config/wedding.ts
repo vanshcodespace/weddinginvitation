@@ -27,6 +27,17 @@ export const weddingConfig = {
       mapsUrl: "https://maps.google.com/?q=Shibu+Makhan+Dharmshala",
     },
     {
+      id: "Mandha",
+      name: "Mandha",
+      date: "Nov 24, 2026",
+      time: "12:00 PM",
+      venue: "Shibu Makhan Dharmshala",
+      address: "Shibu Makhan Dharmshala",
+      description: "Join us for a morning of colors, henna, and music as we kick off the celebrations.",
+      dressCode: "Yellow / Green Traditional",
+      mapsUrl: "https://maps.google.com/?q=Shibu+Makhan+Dharmshala",
+    },
+    {
       id: "sangeet",
       name: "Sangeet Ceremony",
       date: "Nov 24, 2026",

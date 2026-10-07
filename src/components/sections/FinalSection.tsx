@@ -10,9 +10,13 @@ export default function FinalSection() {
 
       <h3 className="font-script text-4xl mb-8 leading-snug">We can't wait to <br/> celebrate with you!</h3>
       
-      <div className="font-names text-5xl text-cream drop-shadow-md mb-8">
+      <div className="font-names text-5xl text-cream drop-shadow-md mb-6">
         {weddingConfig.couple.groomName} & {weddingConfig.couple.brideName}
       </div>
+      
+      <p className="font-display tracking-[0.3em] text-[#d4af37] font-semibold text-lg bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm border border-white/30 inline-block mb-8">
+        #destinedtobeAA
+      </p>
       
       <div className="heart-divider mb-0"><span className="text-white">❦</span></div>
 
