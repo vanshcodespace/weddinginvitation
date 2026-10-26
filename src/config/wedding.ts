@@ -6,6 +6,8 @@ export const weddingConfig = {
     brideFullName: "Aarushi Mittal",
     groomParents: "Mrs. Vandana & Mr. Pankaj Mittal",
     brideParents: "Mrs. Sonali & Mr. Romit Mittal",
+    groomGrandparents: "Mrs. Nirmal Mittal & Late Mr. Subhash Chand Mittal",
+    brideGrandparents: "Mrs. Madhu Mittal & Mr. Naresh Chand Mittal",
   },
   weddingDateTime: "2026-11-25T19:00:00+05:30", 
   timezone: "Asia/Kolkata",
