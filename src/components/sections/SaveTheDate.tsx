@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import SectionWrapper from "@/components/ui/SectionWrapper";
-import { weddingConfig } from "@/config/wedding";
 
 export default function SaveTheDate() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -155,29 +154,6 @@ export default function SaveTheDate() {
     }
   };
 
-  const downloadICS = () => {
-    const eventTitle = `${weddingConfig.couple.groomName} & ${weddingConfig.couple.brideName} Wedding`;
-    // Format: YYYYMMDDTHHmmssZ (basic dummy)
-    const icsContent = `BEGIN:VCALENDAR
-VERSION:2.0
-BEGIN:VEVENT
-SUMMARY:${eventTitle}
-DTSTART:20261130T050000Z
-DTEND:20261130T140000Z
-LOCATION:${weddingConfig.venue.name}
-DESCRIPTION:Join us to celebrate our wedding!
-END:VEVENT
-END:VCALENDAR`;
-    const blob = new Blob([icsContent], { type: 'text/calendar' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'wedding_invitation.ics';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  };
-
   return (
     <SectionWrapper id="savethedate" className="py-16 px-6 text-center flex flex-col items-center">
       <div className="text-3xl text-sage mb-2">✨</div>
@@ -211,14 +187,13 @@ END:VCALENDAR`;
         />
       </div>
 
-      <button 
-        onClick={downloadICS}
-        className="bg-dark-olive hover:bg-sage text-white font-body py-3 px-8 rounded-full transition-colors duration-300 shadow-md flex items-center gap-2 mb-10"
+      <div 
+        className="bg-dark-olive text-white font-body py-3 px-8 rounded-full shadow-md flex items-center gap-2 mb-10 select-none cursor-default"
       >
         <span>📅</span> SAVE THE DATE
-      </button>
+      </div>
 
-      {/* Couple Photo Placeholder */}
+      {/* Couple Photo */}
       <div className="w-full max-w-[320px] h-[240px] rounded-2xl overflow-hidden shadow-lg border-[4px] border-white relative">
         <img 
           src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=400&q=80" 
